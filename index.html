@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameVault | Tu biblioteca de juegos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <input class="view-toggle" type="radio" name="view" id="view-home" checked>
+  <input class="view-toggle" type="radio" name="view" id="view-store">
+  <input class="view-toggle" type="radio" name="view" id="view-library">
+  <input class="view-toggle" type="radio" name="view" id="view-profile">
+
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#inicio" aria-label="GameVault inicio">
+        <span class="brand-mark">G</span>
+        <span>Game<span>Vault</span></span>
+      </a>
+      <p class="side-label">MENÚ PRINCIPAL</p>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <label for="view-home"><span class="nav-icon">⌂</span>Inicio</label>
+        <label for="view-store"><span class="nav-icon">▦</span>Tienda</label>
+        <label for="view-library"><span class="nav-icon">▤</span>Biblioteca</label>
+        <label for="view-profile"><span class="nav-icon">◉</span>Perfil</label>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="promo-mini">
+          <span class="promo-spark">✦</span>
+          <strong>Tu próximo mundo te espera</strong>
+          <p>Explora nuevos juegos y amplía tu colección.</p>
+          <label for="view-store" class="mini-link">Explorar tienda <span>↗</span></label>
+        </div>
+        <div class="user-mini">
+          <div class="avatar">A</div>
+          <div><strong>Alex Morgan</strong><small>Jugador nivel 12</small></div>
+          <span class="online-dot"></span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="mobile-brand"><span class="brand-mark">G</span> GameVault</div>
+        <div class="breadcrumbs">GameVault <span>/</span> <strong class="crumb-home">Inicio</strong><strong class="crumb-store">Tienda</strong><strong class="crumb-library">Biblioteca</strong><strong class="crumb-profile">Perfil</strong></div>
+        <div class="top-actions">
+          <a class="icon-button" href="#buscar" aria-label="Buscar">⌕</a>
+          <a class="icon-button notification" href="#novedades" aria-label="Notificaciones">♧</a>
+          <div class="top-avatar">A</div>
+        </div>
+      </header>
+
+      <section class="view view-home" id="inicio">
+        <div class="welcome-row">
+          <div><p class="eyebrow">LUNES, 12 DE OCTUBRE DE 2026</p><h1>Buenas, Alex <span class="wave">✦</span></h1><p class="muted">¿Listo para tu próxima aventura?</p></div>
+          <label for="view-store" class="button button-primary">Explorar tienda <span>↗</span></label>
+        </div>
+        <a class="hero-banner" href="#destacado">
+          <div class="hero-copy"><span class="pill pill-violet">DESTACADO DE LA SEMANA</span><h2>Tu siguiente<br>gran aventura.</h2><p>Descubre mundos increíbles, historias épicas<br class="desktop-only"> y experiencias que no olvidarás.</p><span class="button button-light">Ver selección <b>→</b></span></div>
+          <div class="hero-art" aria-hidden="true"><div class="planet planet-one"></div><div class="planet planet-two"></div><div class="hero-ring"></div><div class="hero-cube"></div><div class="hero-orbit"></div><span class="hero-star star-a">✦</span><span class="hero-star star-b">✧</span></div>
+          <span class="hero-index">01 <i>/ 03</i></span>
+        </a>
+
+        <div class="section-heading"><div><p class="eyebrow">SELECCIÓN PARA TI</p><h2>Juegos populares</h2></div><label for="view-store" class="text-link">Ver todos <span>→</span></label></div>
+        <div class="game-grid">
+          <article class="game-card"><a class="cover cover-cyber" href="#cyberpunk"><span class="cover-tag">MÁS VENDIDO</span><div class="cover-art"><span class="sun"></span><span class="city"></span><b>CYBER<br>PUNK</b><small>2077</small></div></a><div class="game-info"><div><h3>Cyberpunk 2077</h3><p>Acción · Mundo abierto</p></div><span class="rating">★ 4.8</span></div><div class="game-bottom"><strong>$59.99</strong><label for="view-store" class="small-button">Ver juego</label></div></article>
+          <article class="game-card"><a class="cover cover-gtav" href="#gtav"><span class="cover-tag">CLÁSICO</span><div class="cover-art"><span class="palm palm-a"></span><span class="palm palm-b"></span><b>grand<br>theft auto</b><strong>V</strong></div></a><div class="game-info"><div><h3>Grand Theft Auto V</h3><p>Acción · Aventura</p></div><span class="rating">★ 4.9</span></div><div class="game-bottom"><strong>$29.99</strong><label for="view-store" class="small-button">Ver juego</label></div></article>
+          <article class="game-card"><a class="cover cover-elden" href="#elden"><span class="cover-tag">RECOMENDADO</span><div class="cover-art"><span class="elden-moon"></span><b>ELDEN<br>RING</b><span class="elden-sword">╱</span></div></a><div class="game-info"><div><h3>Elden Ring</h3><p>RPG · Fantasía</p></div><span class="rating">★ 4.9</span></div><div class="game-bottom"><strong>$49.99</strong><label for="view-store" class="small-button">Ver juego</label></div></article>
+          <article class="game-card"><a class="cover cover-minecraft" href="#minecraft"><span class="cover-tag">FAVORITO</span><div class="cover-art"><div class="block-sun"></div><div class="block-hill"></div><b>MINE<br>CRAFT</b></div></a><div class="game-info"><div><h3>Minecraft</h3><p>Sandbox · Creatividad</p></div><span class="rating">★ 4.7</span></div><div class="game-bottom"><strong>$26.99</strong><label for="view-store" class="small-button">Ver juego</label></div></article>
+        </div>
+
+        <div class="section-heading section-heading-lower"><div><p class="eyebrow">TU ACTIVIDAD</p><h2>Continúa jugando</h2></div><label for="view-library" class="text-link">Ir a biblioteca <span>→</span></label></div>
+        <div class="continue-card"><div class="continue-thumb thumb-forza"><span>FORZA<br><b>HORIZON 5</b></span></div><div class="continue-details"><div class="continue-title"><div><h3>Forza Horizon 5</h3><p>Última sesión: ayer</p></div><span class="progress-label">68% completado</span></div><div class="progress-track"><span style="width:68%"></span></div><p class="muted small-text">Tu aventura por México continúa.</p></div><label for="view-library" class="button button-primary continue-button">Continuar <span>→</span></label></div>
+      </section>
+
+      <section class="view view-store" id="tienda">
+        <div class="page-heading"><div><p class="eyebrow">DESCUBRE TU PRÓXIMO JUEGO</p><h1>Explora la tienda</h1><p class="muted">Grandes mundos. Historias inolvidables. Todo en un solo lugar.</p></div><div class="store-count"><strong>120+</strong><span>juegos disponibles</span></div></div>
+        <div class="store-tools"><div class="fake-search" id="buscar"><span>⌕</span><span>Buscar juegos, géneros...</span><kbd>⌘ K</kbd></div><div class="sort-select">Ordenar por: <strong>Popularidad</strong>⌄</div></div>
+        <div class="filter-row"><span class="filter-active">Todos los juegos</span><span>Acción</span><span>Aventura</span><span>RPG</span><span>Deportes</span><span>Indie</span></div>
+        <div class="section-heading"><div><h2>Recomendados para ti</h2><p class="muted">Elegidos según lo que te gusta.</p></div><span class="results-count">6 resultados</span></div>
+        <div class="game-grid store-grid">
+          <article class="game-card"><a class="cover cover-cyber" href="#cyberpunk"><span class="cover-tag">MÁS VENDIDO</span><div class="cover-art"><span class="sun"></span><span class="city"></span><b>CYBER<br>PUNK</b><small>2077</small></div></a><div class="game-info"><div><h3>Cyberpunk 2077</h3><p>Acción · Mundo abierto</p></div><span class="rating">★ 4.8</span></div><div class="game-bottom"><strong>$59.99</strong><a class="small-button" href="#cyberpunk">Detalles</a></div></article>
+          <article class="game-card"><a class="cover cover-gtav" href="#gtav"><span class="cover-tag">CLÁSICO</span><div class="cover-art"><span class="palm palm-a"></span><span class="palm palm-b"></span><b>grand<br>theft auto</b><strong>V</strong></div></a><div class="game-info"><div><h3>Grand Theft Auto V</h3><p>Acción · Aventura</p></div><span class="rating">★ 4.9</span></div><div class="game-bottom"><strong>$29.99</strong><a class="small-button" href="#gtav">Detalles</a></div></article>
+          <article class="game-card"><a class="cover cover-fifa" href="#fifa"><span class="cover-tag">DEPORTES</span><div class="cover-art"><span class="field-lines"></span><b>EA SPORTS</b><strong>FC 24</strong></div></a><div class="game-info"><div><h3>EA Sports FC 24</h3><p>Deportes · Simulación</p></div><span class="rating">★ 4.6</span></div><div class="game-bottom"><strong>$39.99</strong><a class="small-button" href="#fifa">Detalles</a></div></article>
+          <article class="game-card"><a class="cover cover-minecraft" href="#minecraft"><span class="cover-tag">FAVORITO</span><div class="cover-art"><div class="block-sun"></div><div class="block-hill"></div><b>MINE<br>CRAFT</b></div></a><div class="game-info"><div><h3>Minecraft</h3><p>Sandbox · Creatividad</p></div><span class="rating">★ 4.7</span></div><div class="game-bottom"><strong>$26.99</strong><a class="small-button" href="#minecraft">Detalles</a></div></article>
+          <article class="game-card"><a class="cover cover-forza" href="#forza"><div class="cover-art"><span class="forza-sun"></span><b>FORZA</b><strong>HORIZON 5</strong></div></a><div class="game-info"><div><h3>Forza Horizon 5</h3><p>Carreras · Mundo abierto</p></div><span class="rating">★ 4.8</span></div><div class="game-bottom"><strong>$49.99</strong><a class="small-button" href="#forza">Detalles</a></div></article>
+          <article class="game-card"><a class="cover cover-elden" href="#elden"><span class="cover-tag">RECOMENDADO</span><div class="cover-art"><span class="elden-moon"></span><b>ELDEN<br>RING</b><span class="elden-sword">╱</span></div></a><div class="game-info"><div><h3>Elden Ring</h3><p>RPG · Fantasía</p></div><span class="rating">★ 4.9</span></div><div class="game-bottom"><strong>$49.99</strong><a class="small-button" href="#elden">Detalles</a></div></article>
+        </div>
+        <p class="static-note">Vista de demostración: los filtros y controles son visuales. Esta versión utiliza únicamente HTML y CSS.</p>
+      </section>
+
+      <section class="view view-library" id="biblioteca">
+        <div class="page-heading"><div><p class="eyebrow">TU COLECCIÓN PERSONAL</p><h1>Mi biblioteca</h1><p class="muted">Todos tus juegos, listos para la próxima partida.</p></div><div class="library-total"><strong>6</strong><span>juegos en tu colección</span></div></div>
+        <div class="library-stats"><div><span class="stat-icon purple">▣</span><div><small>Juegos totales</small><strong>6</strong></div></div><div><span class="stat-icon green">◷</span><div><small>Horas jugadas</small><strong>128.5 h</strong></div></div><div><span class="stat-icon orange">★</span><div><small>Logros obtenidos</small><strong>47 / 120</strong></div></div></div>
+        <div class="section-heading library-heading"><div><h2>Todos los juegos</h2><p class="muted">Tu colección completa en un solo lugar.</p></div><div class="sort-select">Ordenar: <strong>Recientes</strong>⌄</div></div>
+        <div class="library-list">
+          <article class="library-game"><div class="library-cover cover-cyber"><span>CYBER<br>PUNK <small>2077</small></span></div><div class="library-game-main"><h3>Cyberpunk 2077</h3><p>Última vez jugado: Hoy</p><div class="mini-progress"><span style="width:74%"></span></div><small>74% de progreso</small></div><div class="hours"><strong>42.5 h</strong><small>Tiempo jugado</small></div><span class="status status-playing">Jugando</span><a class="button button-primary library-action" href="#cyberpunk">Ver juego</a></article>
+          <article class="library-game"><div class="library-cover cover-gtav"><span>grand<br>theft auto <b>V</b></span></div><div class="library-game-main"><h3>Grand Theft Auto V</h3><p>Última vez jugado: Ayer</p><div class="mini-progress"><span style="width:55%"></span></div><small>55% de progreso</small></div><div class="hours"><strong>31.0 h</strong><small>Tiempo jugado</small></div><span class="status">Instalado</span><a class="button button-secondary library-action" href="#gtav">Ver juego</a></article>
+          <article class="library-game"><div class="library-cover cover-fifa"><span>EA SPORTS<br><b>FC 24</b></span></div><div class="library-game-main"><h3>EA Sports FC 24</h3><p>Última vez jugado: Hace 3 días</p><div class="mini-progress"><span style="width:32%"></span></div><small>32% de progreso</small></div><div class="hours"><strong>18.0 h</strong><small>Tiempo jugado</small></div><span class="status">Instalado</span><a class="button button-secondary library-action" href="#fifa">Ver juego</a></article>
+          <article class="library-game"><div class="library-cover cover-minecraft"><span>MINE<br>CRAFT</span></div><div class="library-game-main"><h3>Minecraft</h3><p>Última vez jugado: Hace 1 semana</p><div class="mini-progress"><span style="width:88%"></span></div><small>88% de progreso</small></div><div class="hours"><strong>25.0 h</strong><small>Tiempo jugado</small></div><span class="status">Instalado</span><a class="button button-secondary library-action" href="#minecraft">Ver juego</a></article>
+          <article class="library-game"><div class="library-cover cover-forza"><span>FORZA<br><b>HORIZON 5</b></span></div><div class="library-game-main"><h3>Forza Horizon 5</h3><p>Última vez jugado: Hace 1 semana</p><div class="mini-progress"><span style="width:68%"></span></div><small>68% de progreso</small></div><div class="hours"><strong>8.0 h</strong><small>Tiempo jugado</small></div><span class="status">Instalado</span><a class="button button-secondary library-action" href="#forza">Ver juego</a></article>
+          <article class="library-game"><div class="library-cover cover-elden"><span>ELDEN<br>RING</span></div><div class="library-game-main"><h3>Elden Ring</h3><p>Aún no has jugado</p><div class="mini-progress"><span style="width:0%"></span></div><small>0% de progreso</small></div><div class="hours"><strong>0.0 h</strong><small>Tiempo jugado</small></div><span class="status status-new">Nuevo</span><a class="button button-secondary library-action" href="#elden">Ver juego</a></article>
+        </div>
+      </section>
+
+      <section class="view view-profile" id="perfil">
+        <div class="page-heading"><div><p class="eyebrow">TU ESPACIO PERSONAL</p><h1>Mi perfil</h1><p class="muted">Tu identidad de jugador en GameVault.</p></div></div>
+        <div class="profile-card"><div class="profile-cover"></div><div class="profile-content"><div class="profile-avatar">A</div><div class="profile-name"><h2>Alex Morgan <span class="verified">✓</span></h2><p>@alexmorgan · Miembro desde 2024</p><span class="level-pill">✦ Nivel 12</span></div><div class="profile-actions"><span class="button button-secondary">Editar perfil</span></div><p class="profile-bio">Explorando nuevos mundos, una partida a la vez.</p><div class="profile-metrics"><div><strong>6</strong><span>Juegos</span></div><div><strong>128.5 h</strong><span>Horas jugadas</span></div><div><strong>47</strong><span>Logros</span></div><div><strong>12</strong><span>Nivel</span></div></div></div></div>
+        <div class="section-heading"><div><p class="eyebrow">TU ACTIVIDAD</p><h2>Logros recientes</h2></div></div>
+        <div class="achievement-grid"><div class="achievement"><span class="achievement-icon gold">✦</span><div><strong>Primeros pasos</strong><p>Completaste tu primera misión.</p><small>Cyberpunk 2077 · Hace 2 días</small></div></div><div class="achievement"><span class="achievement-icon violet">♜</span><div><strong>Explorador</strong><p>Descubriste una nueva región.</p><small>Elden Ring · Hace 5 días</small></div></div><div class="achievement"><span class="achievement-icon blue">⚡</span><div><strong>A toda velocidad</strong><p>Ganaste tu primera carrera.</p><small>Forza Horizon 5 · Hace 1 semana</small></div></div></div>
+      </section>
+
+      <footer class="footer"><span>© 2026 GameVault</span><span>Tu universo de videojuegos <b>✦</b></span></footer>
+    </main>
+  </div>
+</body>
+</html>
